@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       {/* ========== FOOTER ========== */}
-      <footer className="mt-auto w-full dark:bg-dark-neutral">
+      <footer className="mt-auto w-full">
         <div className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
           {/* Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -26,7 +26,7 @@ const Footer = () => {
               <div className="mt-3 grid space-y-3">
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-neutral-400 dark:hover:text-neutral-200"
+                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-dark-700 dark:hover:text-white"
                     href="#"
                   >
                     Pricing
@@ -34,7 +34,7 @@ const Footer = () => {
                 </p>
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-neutral-400 dark:hover:text-neutral-200"
+                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-dark-700 dark:hover:text-white"
                     href="#"
                   >
                     Changelog
@@ -42,7 +42,7 @@ const Footer = () => {
                 </p>
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-neutral-400 dark:hover:text-neutral-200"
+                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-dark-700 dark:hover:text-white"
                     href="#"
                   >
                     Docs
@@ -58,7 +58,7 @@ const Footer = () => {
               <div className="mt-3 grid space-y-3">
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-neutral-400 dark:hover:text-neutral-200"
+                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-dark-700 dark:hover:text-white"
                     href="#"
                   >
                     About us
@@ -66,7 +66,7 @@ const Footer = () => {
                 </p>
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-neutral-400 dark:hover:text-neutral-200"
+                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-dark-700 dark:hover:text-white"
                     href="#"
                   >
                     Blog
@@ -75,7 +75,7 @@ const Footer = () => {
 
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-neutral-400 dark:hover:text-neutral-200"
+                    className="inline-flex gap-x-2 text-dark-300 hover:text-dark-500 dark:text-dark-700 dark:hover:text-white"
                     href="#"
                   >
                     Customers
@@ -92,7 +92,7 @@ const Footer = () => {
                 Stay Updated With Us
               </p>
               <form>
-                <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-neutral-900">
+                <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-light-900 rounded-lg p-2 dark:bg-dark-50">
                   <div className="w-full">
                     <label htmlFor="hero-input" className="sr-only">
                       Search
@@ -101,7 +101,7 @@ const Footer = () => {
                       type="text"
                       id="hero-input"
                       name="hero-input"
-                      className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-transparent dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                      className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-primary-400 focus:ring-primary-400 disabled:opacity-50 disabled:pointer-events-none dark:bg-dark-50 dark:border-transparent dark:text-white dark:placeholder-white dark:focus:ring-dark-300"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -119,7 +119,7 @@ const Footer = () => {
           {/* End Grid */}
           <div className="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
             <div className="flex justify-between items-center">
-              <p className="text-sm text-black dark:text-neutral-400">
+              <p className="text-sm text-black dark:text-dark-700">
                 © 2024 Physics Course. All rights reserved.
               </p>
             </div>
@@ -127,25 +127,26 @@ const Footer = () => {
             {/* Social Brands */}
             <div>
               <a
-                className="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-dark-200 hover:bg-dark-800 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+                className="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-dark-200 hover:bg-dark-800 
+                dark:text-white dark:hover:bg-dark-200 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-dark-200"
                 href="#"
               >
                 <FaFacebook />
               </a>
               <a
-                className="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-dark-200 hover:bg-dark-800 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+                className="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-dark-200 hover:bg-dark-800 dark:text-white dark:hover:bg-dark-200 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-dark-200"
                 href="#"
               >
                 <FaInstagram />
               </a>
               <a
-                className="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-dark-200 hover:bg-dark-800 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+                className="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-dark-200 hover:bg-dark-800 dark:text-white dark:hover:bg-dark-200 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-dark-200"
                 href="#"
               >
                 <FaLinkedin />
               </a>
               <a
-                className="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-dark-200 hover:bg-dark-800 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+                className="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-dark-200 hover:bg-dark-800 dark:text-white dark:hover:bg-dark-200 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-dark-200"
                 href="#"
               >
                 <FaTwitter />

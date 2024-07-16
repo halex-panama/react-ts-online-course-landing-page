@@ -1,3 +1,4 @@
+import ScrollToTop from "react-scroll-to-top";
 import {
   About,
   Courses,
@@ -8,6 +9,7 @@ import {
   Navbar,
   Testimonials,
 } from "./components";
+import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 
 const App = () => {
   return (
@@ -20,6 +22,11 @@ const App = () => {
       <Testimonials />
       <CTA />
       <Footer />
+      <ScrollToTop
+        smooth
+        component={<MdOutlineKeyboardDoubleArrowUp size={20} />}
+        className="grid place-content-center text-black bg-primary-800"
+      />
     </div>
   );
 };
